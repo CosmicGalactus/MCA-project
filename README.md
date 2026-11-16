@@ -1,6 +1,6 @@
 <div align="center">
 
-# DualPath
+# DualLane
 
 ### Harvard vs Shared-Memory Organization: a cycle-accurate comparison in Verilog
 
@@ -70,7 +70,7 @@ writes data**. Where those two live decides how fast the processor can go.
 | Flexibility | Memory can be split between code and data freely | Fixed split between code and data |
 | Typical use | General-purpose main memory | Microcontrollers (AVR, PIC), DSPs, split L1 caches |
 
-**DualPath** builds both organizations around the **same** single-cycle 16-bit CPU and runs the
+**DualLane** builds both organizations around the **same** single-cycle 16-bit CPU and runs the
 **same** programs on each, so the memory organization is the only variable. The stall is not
 assumed or calculated: it comes out of real RTL and is visible in the waveforms below.
 
@@ -477,7 +477,7 @@ No data.
 ## Repository Structure
 
 ```
-dualpath/
+DualLane/
 ├── rtl/                          # Synthesizable design (Verilog-2001)
 │   ├── program_counter.v         # PC: +1 per instruction, holds on stall/halt
 │   ├── register_file.v           # 8 x 16-bit, 2 read ports, 1 write port, R0 = 0
