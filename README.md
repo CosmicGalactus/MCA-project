@@ -362,7 +362,7 @@ Harvard overlaps fetch and data in cycles 1, 2 and 4. The shared port serves **e
 ### Run it
 
 ```sh
-git clone https://github.com/rajdeep-2004/dualpath.git
+git clone https://github.com/CosmicGalactus/MCA-project.git
 cd dualpath
 make compare
 ```
@@ -542,11 +542,11 @@ The full reasoning is in [`docs/decisions.md`](docs/decisions.md).
 
 | Member | GitHub | Area | Modules | Responsibilities |
 |---|---|---|---|---|
-| **Rajat Srivastav** | [@rajatrsrivastav](https://github.com/rajatrsrivastav) | CPU state | `register_file.v`, `program_counter.v` | 8 × 16 register file with R0 = 0, two read ports and synchronous write; program counter with enable for stall and halt |
-| **Sachin** | [@jaiswalsachin49](https://github.com/jaiswalsachin49) | Processor core | `cpu.v` | Instruction decode, control signals, adder and address generation, `stall` handling, HALT logic |
-| **Anand** | [@anand24mishra](https://github.com/anand24mishra) | Memory control | `address_decoder.v`, `rw_control.v`, `io_reg.v` | Address map decoding, `addr_err`, write-enable routing, read-data selection, memory-mapped output |
-| **Rajdeep** | [@rajdeep-2004](https://github.com/rajdeep-2004) | Harvard system and integration | `instruction_memory.v`, `data_memory.v`, `harvard_top.v`, `tb_harvard.v`, `programs/`, `Makefile`, docs | Separate instruction/data memories, Harvard top-level integration, self-checking testbench, test programs, build flow, diagrams, waveforms and documentation |
-| **Omved Nagre** | [@OmvedNagre](https://github.com/OmvedNagre) | Shared-memory system | `shared_memory.v`, `shared_mem_controller.v`, `shared_top.v`, `tb_shared.v` | Single-port shared memory, fetch/data phase controller with stall, shared top level, testbench and comparison |
+| **Prakhar Srivastava** | [@rajatrsrivastav](https://github.com/CosmicGalactus) | CPU state | `register_file.v`, `program_counter.v` | 8 × 16 register file with R0 = 0, two read ports and synchronous write; program counter with enable for stall and halt |
+| **Rishav Dewan** | [@jaiswalsachin49](https://github.com/rish106-hub) | Processor core | `cpu.v` | Instruction decode, control signals, adder and address generation, `stall` handling, HALT logic |
+| **Soumen Dass** | [@anand24mishra](https://github.com/Soumen-Dass-3002) | Memory control | `address_decoder.v`, `rw_control.v`, `io_reg.v` | Address map decoding, `addr_err`, write-enable routing, read-data selection, memory-mapped output |
+| **Pragya Kashyap** | [@rajdeep-2004](https://github.com/pragya238) | Harvard system and integration | `instruction_memory.v`, `data_memory.v`, `harvard_top.v`, `tb_harvard.v`, `programs/`, `Makefile`, docs | Separate instruction/data memories, Harvard top-level integration, self-checking testbench, test programs, build flow, diagrams, waveforms and documentation |
+| **Balajee** | [@OmvedNagre](https://github.com/Balajeein) | Shared-memory system | `shared_memory.v`, `shared_mem_controller.v`, `shared_top.v`, `tb_shared.v` | Single-port shared memory, fetch/data phase controller with stall, shared top level, testbench and comparison |
 
 ---
 
