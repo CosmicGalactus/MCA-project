@@ -85,21 +85,21 @@ assumed or calculated: it comes out of real RTL and is visible in the waveforms 
 
 | Brief requirement | Delivered | Where |
 |---|:---:|---|
-| Program Counter | ✅ | [`rtl/program_counter.v`](rtl/program_counter.v) |
-| Instruction Memory | ✅ | [`rtl/instruction_memory.v`](rtl/instruction_memory.v) |
-| Data Memory | ✅ | [`rtl/data_memory.v`](rtl/data_memory.v) |
-| Address Decoder | ✅ | [`rtl/address_decoder.v`](rtl/address_decoder.v) |
-| Read/Write Control | ✅ | [`rtl/rw_control.v`](rtl/rw_control.v) |
-| Independent instruction and data paths | ✅ | [`rtl/harvard_top.v`](rtl/harvard_top.v) |
-| Connect to a simple processor | ✅ | [`rtl/cpu.v`](rtl/cpu.v) |
-| Execute programs with fetches and data accesses | ✅ | [`programs/`](programs/), [`tb/`](tb/) |
-| Analyze simultaneous access opportunities | ✅ | [Waveforms](#simulation-waveforms), [Timing](#cycle-by-cycle-timing) |
-| **Deliverable:** Harvard memory RTL | ✅ | [`rtl/`](rtl/) |
-| **Deliverable:** Block diagram | ✅ | [`docs/diagrams/`](docs/diagrams/) |
-| **Deliverable:** Simulation waveforms | ✅ | [`docs/waveforms/`](docs/waveforms/) |
-| **Deliverable:** Comparison with shared memory | ✅ | [`rtl/shared_top.v`](rtl/shared_top.v), [Key Result](#key-result) |
-| **Deliverable:** Project report | ✅ | [`docs/report.pdf`](docs/report.pdf) |
-| **Deliverable:** Project video | ✅ | [Google Drive](https://drive.google.com/drive/folders/1DN-MHHC9RrDTIAyokIn9tV_p_m0ZAFfY?usp=sharing) |
+| Program Counter | Yes | [`rtl/program_counter.v`](rtl/program_counter.v) |
+| Instruction Memory | Yes | [`rtl/instruction_memory.v`](rtl/instruction_memory.v) |
+| Data Memory | Yes | [`rtl/data_memory.v`](rtl/data_memory.v) |
+| Address Decoder | Yes | [`rtl/address_decoder.v`](rtl/address_decoder.v) |
+| Read/Write Control | Yes | [`rtl/rw_control.v`](rtl/rw_control.v) |
+| Independent instruction and data paths | Yes | [`rtl/harvard_top.v`](rtl/harvard_top.v) |
+| Connect to a simple processor | Yes | [`rtl/cpu.v`](rtl/cpu.v) |
+| Execute programs with fetches and data accesses | Yes | [`programs/`](programs/), [`tb/`](tb/) |
+| Analyze simultaneous access opportunities | Yes | [Waveforms](#simulation-waveforms), [Timing](#cycle-by-cycle-timing) |
+| **Deliverable:** Harvard memory RTL | Yes | [`rtl/`](rtl/) |
+| **Deliverable:** Block diagram | Yes | [`docs/diagrams/`](docs/diagrams/) |
+| **Deliverable:** Simulation waveforms | Yes | [`docs/waveforms/`](docs/waveforms/) |
+| **Deliverable:** Comparison with shared memory | Yes | [`rtl/shared_top.v`](rtl/shared_top.v), [Key Result](#key-result) |
+| **Deliverable:** Project report | Yes | [`docs/report.pdf`](docs/report.pdf) |
+| **Deliverable:** Project video | Yes | [Google Drive](https://drive.google.com/drive/folders/1DN-MHHC9RrDTIAyokIn9tV_p_m0ZAFfY?usp=sharing) |
 
 | Evaluation focus | How this project demonstrates it |
 |---|---|
